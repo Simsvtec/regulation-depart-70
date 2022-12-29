@@ -58,7 +58,8 @@ basic.forever(function () {
             . . . . .
             `)
     }
-    while (DS18B20.TemperatureNumber(DS18B20.pin.pin0) < 0 - delta) {
+    basic.pause(2000)
+    while (DS18B20.TemperatureNumber(DS18B20.pin.pin0) < température_consigne - delta) {
         pins.digitalWritePin(DigitalPin.P1, 0)
         pins.digitalWritePin(DigitalPin.P2, 1)
         basic.showLeds(`
@@ -69,4 +70,5 @@ basic.forever(function () {
             . . # . .
             `)
     }
+    basic.pause(2000)
 })
