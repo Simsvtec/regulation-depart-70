@@ -5,7 +5,9 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "ds18b20": "github:DFRobot/pxt-ds18b20#v0.1.0"
+        "ds18b20": "github:DFRobot/pxt-ds18b20#v0.1.0",
+        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0",
+        "microbit-dstemp": "github:bsiever/microbit-dstemp#v0.1.26"
     },
     "files": [
         "main.blocks",
